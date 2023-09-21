@@ -1,13 +1,15 @@
 let movie = "Chicken Run";
 document.getElementById("string").innerHTML =
-"My favorite movie is " + movie + "." // Concatenated String Variable
+"My favorite movie is " + movie + "."; // Concatenated String Variable
 
 let voteage = 20;
+
 if (voteage >= 18) { // If Statement
   voteage = "You are old enough to vote";
 } else { // Else Statement
   voteage = "You are not old enough to vote";
 }
+
 document.getElementById("if").innerHTML = voteage;
 
 let pet;
@@ -32,15 +34,14 @@ switch (pet) { // Switch Statement
     break;
   default:
     pet = "I do not own a pet";
-    break;
 }
 document.getElementById("switch").innerHTML = pet;
 
 function myFunction() {
-    let text = document.getElementById("uppercase").innerHTML;
-    document.getElementById("uppercase").innerHTML =
-    text.toUpperCase(); // String Method: toUpperCase()
-  }
+  let text = document.getElementById("uppercase").innerHTML;
+  document.getElementById("uppercase").innerHTML =
+  text.toUpperCase(); // String Method: toUpperCase()
+}
 
 let text1 = "Junior";
 let text2 = "Mints";
@@ -56,7 +57,7 @@ document.getElementById("tofixed").innerHTML =
 
 let y = 3.141;
 document.getElementById("toprecision").innerHTML = 
-  x.toPrecision() + "<br>" + // Number Method: yoPrecision()
+  x.toPrecision() + "<br>" + // Number Method: toPrecision()
   x.toPrecision(2) + "<br>" +
   x.toPrecision(4) + "<br>" +
   x.toPrecision(6); 
@@ -64,21 +65,20 @@ document.getElementById("toprecision").innerHTML =
 // 4.1 Video Lesson: Conditional Statements
 const age = 18;
 
-if (age <= "18") {
+if (age <= 18) {
   console.log("You are good to go!");
 } else if (age < 15) {
   console.log("Wow you are really young...why are you even here");
-}
-else {
-  console.log('You are not old enough');
+} else {
+  console.log("You are not old enough");
 }
 
 const dice1 = 6;
-const dice2 = 3;
+const dice2 = 6;
 
-if (dice1 === 6 || dice2 === 6) {
+if (dice1 === 6 && dice2 === 6) {
   console.log("You rolled a double");
-}  else {
+} else {
   console.log("You didn't");
 }
 
@@ -89,12 +89,16 @@ const yourAge = 20;
 
 console.log(myAge + yourAge);
 
-console.log("Hello my name is" + "Jose");
+console.log("Hello my name is " + "Jose");
+
+console.log('Hello it\'s me Jose');
 
 console.log("Hello it's me Jose");
 
 const name = "Jose";
 const currentage = 20;
+
+console.log(`Hello it's me and my name is ${name}`);
 
 console.log(
   "Hello it's me " + name + " and my age is " + currentage + " and I am getting old"
@@ -104,4 +108,6 @@ console.log(`Hello it's me ${name} and my age is ${currentage}`);
 
 const combined = name + currentage;
 
+console.log(combined);
+console.log(typeof combined);
 console.log(typeof currentage);
