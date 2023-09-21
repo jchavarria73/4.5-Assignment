@@ -1,6 +1,9 @@
-let movie = "Chicken Run";
+let movie1 = "Chicken Run";
+let movie2 = "Shrek 2";
+let movie3 = "Wreck-It Ralph";
 document.getElementById("string").innerHTML =
-"My favorite movie is " + movie + "."; // Concatenated String Variable
+"My favorite movies are " + movie1 + ", " + movie2 + // Concatenated String Variable
+", " + "& " + movie3 + "."; 
 
 let voteage = 20;
 
